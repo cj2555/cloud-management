@@ -1,4 +1,4 @@
-const { default: Navbar } = require("./components/Navbar");
+import Navbar from "./components/Navbar";
 
 function App() {
   return (

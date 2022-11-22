@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer base {
+  li {
+    @apply p-4
+  }
+
+  button {
+    @apply bg-indigo-700 text-white border-indigo-800
+    hover:bg-transparent p-4 hover:text-indigo-700 rounded
+  }
+}
