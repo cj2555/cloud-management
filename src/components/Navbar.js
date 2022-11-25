@@ -5,14 +5,14 @@ function Navbar() {
   const handleCLick = () => seNav(!nav);
 
   return (
-    <div className="w-screen bg-zinc-200 h-[50px] z-10 drop-shadow-md">
+    <div className="w-screen  h-[50px] z-10 ">
       <div className="px2 flex justify-between items-center w-full h-full">
         <div className="px-2 flex items-center">
-          <h1 className="text-3xl font-bold mr-4 sm:text-4xl text-indigo-500 z-12 drop-shadow-md">
+          <h2 className="text-2xl font-bold ml-4 sm:text-4xl z-12 drop-shadow-md">
             CloudM
-          </h1>
+          </h2>
 
-          <ul className="hidden md:flex">
+          <ul className="hidden md:flex items-center space-x-4 ml-20">
             <li>Home</li>
             <li>About</li>
             <li>Support</li>
@@ -32,9 +32,7 @@ function Navbar() {
         </div>
       </div>
 
-      <ul
-        className={!nav ? "hidden" : "absolute bg-zinc-200 w-full h-full px-8"}
-      >
+      <ul className={!nav ? "hidden" : "absolute bg-zinc-200 w-full  px-8"}>
         <li className="border-b-2 border-zinc-300">Home</li>
         <li className="border-b-2 border-zinc-300">About</li>
         <li className="border-b-2 border-zinc-300">Support</li>
